@@ -17,7 +17,8 @@ pipeline {
         CI = 'true'
       }
       steps {
-        sh './jenkins/scripts/test.sh'
+        sh '''chmod 777 ./jenkins/scripts/test.sh
+./jenkins/scripts/test.sh'''
       }
     }
   }
